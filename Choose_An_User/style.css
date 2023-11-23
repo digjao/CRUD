@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600&display=swap');
+
+*:not(dialog), *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    display: flex;
+
+}
+
+.bg-color-bege {
+    /* flex-grow: 1; */
+    background-color: #F6EDD9;
+}
+
+.row {
+    display: flex;
+    border: 2px solid red;
+    margin: 0.25rem   
+}
+
+.item {
+    border: 2px solid green;
+    margin: 0.25rem;
+}
+
+.subitem {
+    border: 2px solid blue;
+    margin: 0.25rem;
+}
+
+/* .flex {
+    display: flex;
+} */
+
+/* .flex-column {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .grow-1 {
+    flex-grow: 1;
+} */
+.grow-2 {
+    flex-grow: 2;
+}
+.grow-3 {
+    flex-grow: 3;
+}
+.grow-4 {
+    flex-grow: 4;
+}
+.grow-8 {
+    flex-grow: 8;
+}
+
+.p-l {
+    padding-left: 40rem;
+}
+.p-r{
+    padding-right: 6.875rem;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+
+/* .justify-between {
+    justify-content: space-between;
+} */
+.justify-end {
+    justify-content: flex-end;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+.align-end {
+    align-items: flex-end;
+}
+.material-symbols-outlined {
+  font-size: 12rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+h1 {
+    /* font-size: 3rem; */
+    color: #5B902D;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #5B902D;
+    font-weight: 400;
+
+}
+p {
+    font-size: 1.5rem;
+    color: #5B902D;
+    font-weight: 400;
+}
+/* .text-center {
+    text-align: center;
+} */
+
+/* .container-header {
+    margin: 1.5rem;
+    width: 100%;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.container-itens {
+    margin: 1.5rem;
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border: 1rem;
+} */
+
+span.prim {
+    /* color: #41a3a3; */
+    color: rgba(65, 163, 163, 0.6);
+}
+
+span.second {
+    /* color: #FB5F57; */
+    color: rgba(255, 0, 0, 0.6);
+}
+
+span.third {
+    color: rgb(255, 214, 9, 0.6);
+}
+
+
+.material-symbols-outlined {
+  font-size: 12rem;
+  color: #282828;
+   font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.footer {
+    background-color: #F9D992;
+    display: flex;
+    height: 4.5rem;
+    gap: 2.5rem;
+}
+
+#logo {
+    width: 337px;
+    
+}
+
+#tiny-logo {
+    width: 150px;
+}

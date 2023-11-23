@@ -1,0 +1,89 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="bg-body flex flex-col h-screen">
+    <header class="flex items-center bg-header">
+        <img class="w-64 h-16 mr-72" src="logo-200.png" alt="">
+        <h3 class="text-2xl h1-color font-300">Tenha acesso a uma grande variedade de entretenimento em qualquer lugar,
+            a qualquer momento.</h>
+    </header>
+    <div class="flex justify-center items-center flex-grow">
+        <main class="flex flex-col flex-2 items-center justify-center ">     
+            <h1 class="text-4xl mb-36 h1-color">Criar conta</h1>
+            <form onsubmit="event.preventDefault()" class="mb-16">
+                <div class="flex" >
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 mr-4  mt-2 p-4 border-green text-lg font-color hover:border-green-500 focus:ring outline-none " type="text"
+                        name="ipNome" placeholder="Nome" id="ipNome">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Você deve digitar um nome</p>
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 p-4 mt-2 border-green text-lg font-color hover:border-green-500 focus:ring outline-none " type="text"
+                        name="ipSobrenome" placeholder="Sobrenome" id="ipSobrenome">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Digite seu sobrenome</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 mr-4  p-4  mt-2 border-green text-lg font-color hover:border-green-500 focus:ring outline-none" type="email"
+                        name="ipEmail" placeholder="Email" id="ipEmail">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Você deve inserir um email</p>    
+                    </div>
+
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 p-4  mt-2 border-green text-lg font-color hover:border-green-500 focus:ring outline-none" type="text"
+                        name="ipConfirmEmail" placeholder="Confirme o email" id="ipConfirmEmail">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Você deve inserir um email</p>    
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 mr-4  mt-2 p-4 border-green text-lg font-color hover:border-green-500 focus:ring outline-none" type="password"
+                        name="ipSenha" placeholder="Senha" id="ipSenha">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Você deve inserir uma senha</p>
+                    </div>
+
+                    <div>
+                        <label for=""></label>
+                        <input class="register_form w-72 h-12 rounded-3xl border-2 p-4 mt-2 border-green text-lg font-color hover:border-green-500 focus:ring outline-none"
+                        type="password" name="ipConfirmSenha" placeholder="Confirmar senha" id="ipConfirmSenha">
+                        <p class="pt-0.5 text-red-600 text-xs hidden">Você deve confirmar a senha</p>    
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <button
+                    id="btnCreate" class="mt-12 flex w-72 h-12 rounded-3xl border-2 p-4 bg-button text-xl items-center justify-center text-white font-300 ">
+                    Criar conta
+                    </button>
+                </div>
+        </form>
+        <span class="w-47rem font-color1">
+            <p>Ao clicar em Criar conta, você confirma que você tem pelo menos 18 anos,
+                que concorda com os Termos de Uso e que leu nossa Política de Privacidade.
+                Você também confirma que aceita receber publicidade, promoções e outras
+                ofertas da PeiningFlix e de suas Afiliadas por e-mail, redes sociais e outros canais.
+                Caso você crie um Perfil infantil, você concorda com o tratamento das informações
+                pessoais coletadas por meio desse perfil conforme descrito na Política de Privacidade,
+                caso esse consentimento seja necessário no local onde você reside.
+            </p>
+        </span>
+    </main>
+    </div>
+</body>
+</html>
