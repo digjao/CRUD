@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
         function editUser() {
             const editButton = document.querySelectorAll('button[name="editButton"]')
-            editButton.addEventListener("click", () => {
-                abreModal()
+            editButton.forEach(input => {
+                input.addEventListener("click", () => {abreModal(input.parentElement.parentElement.parentElement)})
+                    
             })
 
         }
