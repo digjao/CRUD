@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
 
     //EVENTOS-----------------------------------------------------------
-    // botaoAdd.addEventListener("click", (e) => createNewUser(e.target))
     botaoAdd.addEventListener("click", () => abreModal());
     saveButton.addEventListener("click", () => createNewUser());
     editModalButton.addEventListener("click", () => editItem());
     cancelButton.addEventListener("click", () => {
         inputModal.value = '';
         document.querySelector('#modal').close();
-
+        saveButton.classList.add('hidden')
+        editModalButton.classList.add('hidden')
     })
 
     //EVENTOS-----------------------------------------------------------
@@ -34,25 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
         saveButton.classList.remove('hidden')
     }
 
+    // function configEditModal() {
+    //     const editButtons = document.querySelectorAll('button[name="editButton"]')
+    //     editButtons.forEach(button => {
+    //         button.addEventListener("click", () => editModal(button.parentElement.previousElementSibling))
+    //     })
+    // }
+
     function editModal(oin) {
         modal.showModal()
+        console.log('cheguei aqui');
         modal.firstElementChild.innerHTML = 'Editar um usuário:'
         inputModal.value = oin.innerHTML
         saveButton.classList.add('hidden')
         editModalButton.classList.remove('hidden');
 
         inputModal.setAttribute('data-key', oin.parentElement.getAttribute('data-key'));
-
-
     }
 
-    function configEditModal() {
-        const editButtons = document.querySelectorAll('button[name="editButton"]')
-        editButtons.forEach(button => {
-            button.addEventListener("click", () => editModal(button.parentElement.previousElementSibling))
-        })
-
-    }
     function createNewUser() {
 
         nome = inputModal.value
@@ -75,8 +74,14 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         `
 
+        // configEditModal();
         container.insertBefore(novo, container.lastElementChild);
-        configEditModal();
+
+
+        novo.firstElementChild.lastElementChild.firstElementChild.addEventListener('click', () => editModal(novo.firstElementChild.children[1]))
+        console.log(novo.lastElementChild);
+        novo.firstElementChild.lastElementChild.lastElementChild.addEventListener('click', () => removeItem(novo.firstElementChild))
+
 
         inputModal.value = '';
         modal.close();
@@ -91,6 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
         inputModal.removeAttribute('data-key');
         inputModal.value = '';
         modal.close();
+    }
+
+
+    function removeItem(div) {
+        div.remove()
     }
 
 })
